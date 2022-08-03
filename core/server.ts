@@ -1,8 +1,8 @@
-import express from 'express'
-import cors from 'cors'
-import cookieParser from 'cookie-parser'
-import mongoose from 'mongoose'
-import dotenv from 'dotenv'
+import * as express from 'express'
+import * as cors from 'cors'
+import * as cookieParser from 'cookie-parser'
+import * as mongoose from 'mongoose'
+import * as dotenv from 'dotenv'
 
 import router from './router'
 import responseMiddleware from '../middleware/response.middleware'

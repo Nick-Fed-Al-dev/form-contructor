@@ -5,7 +5,7 @@ import { IUser } from './../types/IUser';
 import { ISuccessResponse } from './../types/ISuccessResponse';
 import { IError } from '../types/IError';
 
-export const baseURL : string = 'https://localhost:3333/api'
+export const baseURL : string = 'http://localhost:3333/api'
 
 export const $api = axios.create({
   baseURL,
