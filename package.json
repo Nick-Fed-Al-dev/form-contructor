@@ -6,10 +6,13 @@
   "scripts": {
     "server:dev": "ts-node-dev --respawn index.ts",
     "server:start": "ts-node index.ts",
+    "server:install": "npm install",
     "client:dev": "npm run start --prefix client",
     "client:build": "npm run build --prefix client",
+    "client:install": "npm install --prefix client",
     "dev": "concurrently \" npm run server:dev \" \" npm run client:dev \"",
-    "start": "concurrently \" npm run server:start \" \" npm run client:dev \""
+    "start": "concurrently \" npm run server:start \" \" npm run client:dev \"",
+    "install": "concurrently \" npm run server:install \" \" npm run client:install \""
   },
   "repository": {
     "type": "git",
